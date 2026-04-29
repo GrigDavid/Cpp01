@@ -5,6 +5,9 @@
 
 class Weapon{
 	public:
+		Weapon();
+		Weapon(const Weapon& weapon);
+		~Weapon();
 		const std::string& getType();
 		void setType(std::string type);
 	private:
