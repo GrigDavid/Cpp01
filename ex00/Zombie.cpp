@@ -6,14 +6,17 @@ Zombie::Zombie()
 
 }
 
+Zombie::Zombie(const Zombie& other) : _name(other._name)
+{
+}
+
 Zombie::~Zombie()
 {
 	std::cout << _name << " has been destroyed" << std::endl;
 }
 
-Zombie::Zombie(std::string name)
+Zombie::Zombie(std::string name) : _name(name)
 {
-	_name = name;
 }
 
 void	Zombie::announce( void )
