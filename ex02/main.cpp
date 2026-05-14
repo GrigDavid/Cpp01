@@ -15,6 +15,5 @@ int main()
 	std::cout << *thePointer << std::endl;
 	std::cout << theString << std::endl;
 
-
 	return (0);
 }
